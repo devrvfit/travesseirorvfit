@@ -1,0 +1,216 @@
+/* Variables css*/
+:root{
+    /* Colors */
+    /* Color mode HSL(hue, saturation, lightness)*/
+    /*
+        blue    :   hsl(224, 69%, 14%)
+        red     :   hsl(0, 100%, 43%)
+        gray    :   hsl(0, 0%, 98%)
+        green   :   hsl(100, 83%, 41%)
+        yellow  :   HSL(52, 100%, 50%)
+    */
+
+    --hue: 213;
+    --sat: 47%;
+    --lig: 26%;
+
+    --brand-color1: hsl(var(--hue), var(--sat), var(--lig)) ;
+    --brand-color2: hsl(359, 100%, 71%);
+    --brand-color2-light: hsl(359, 100%, 90%);
+    --gray-color: hsl(0, 8%, 95%);
+    --title-color: hsl(var(--hue), var(--sat), var(--lig));
+    --text-color: hsl(var(--hue), 15%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+    --attention-color-red: hsl(0, 100%, 43%);
+    --attention-color-green: hsl(120, 60%, 48%);
+    --attention-color-green-shadow: hsl(120, 60%, 32%);
+    --attention-color-yellow: hsl(47, 100%, 52%);
+
+    /* Font and typography */
+    /* .5rem = 8px / 1rem = 16px */
+    --body-font: 'system-ui', sans-serif;
+    --header: 5.8rem;
+    --title: clamp(3.2rem, 3.8vw, 4.2rem);
+    --subtitle: clamp(2rem, 2.4vw, 2.8rem);
+    --subtitle-h4: clamp(1.8rem, 2.2vw, 2.4rem);
+    --body-text: clamp(1.6rem, 1.8vw, 2rem);
+    --details: clamp(1.4rem, 1.6vw, 1.8rem);
+    --smallest: clamp(1rem, 1.2vw, 1.4rem);
+
+}
+
+*,
+*::after,
+*::before{
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    text-align:left;
+    border:0;
+    outline-color:#ccc;
+    color: var(--brand-color1);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:62.5%;
+    font-family: var(--body-font);
+    font-display:optional;
+}
+html{
+    max-width: 1920px;
+    margin: auto;
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+
+h1{
+    font-size: var(--header);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+h2{
+    font-size: var(--title);
+    font-weight: 700;
+}
+h3{
+    font-size: var(--subtitle);
+    font-weight: 600;
+}
+p{
+    font-size: var(--body-text);
+    line-height: 160%;
+}
+li{
+    font-size: var(--body-text);
+}
+a{
+    font-size: var(--body-text);
+    font-weight: 500;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+span{
+    font-size: inherit;
+}
+strong{
+    font-size: inherit;
+}
+details{
+    font-size: var(--details);
+}
+b{
+    font-size: inherit;
+}
+section{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.container{
+    display: grid;
+    width: min(100% - 10%, 1280px);
+    margin-inline: auto;
+    gap: 2.4rem;
+}
+
+section.banner-hero{
+    border-bottom: .5rem solid var(--brand-color2);
+}
+
+section.s-chamada .container h2{
+    text-align: center;
+}
+section.s-chamada .container h2 b{
+    color: var(--brand-color2);
+}
+
+section.s-pain{
+    background-color: var(--brand-color1);
+
+}
+
+section.s-pain .container .pain_title h2,
+section.s-pain .container .pain_title h3{
+    color: #fff;
+    text-align: center;
+}
+section.s-pain .container .pain_title h2 b,
+section.s-pain .container .pain_title h3 b{
+    color: var(--attention-color-yellow);
+}
+section.s-pain .container .pain-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 6.4rem;
+    gap: 4rem;
+    justify-items: center;
+}
+section.s-pain .container .pain-content .pain-item{
+    display: grid;
+    max-width: 280px;
+    max-height: 256px;
+}
+section.s-pain .container .pain-content .pain-item img{
+    max-width: max-content;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+section.s-chega .container .chega-title h2,
+section.s-chega .container .chega-title h3 {
+    text-align: center;
+    margin-top: 2.4rem;
+}
+section.s-chega .container picture {
+    margin-top: 4rem;
+}
+section.s-altura_regulavel .container .altura_regulavel-title h2,
+section.s-altura_regulavel .container .altura_regulavel-title h3{
+    text-align: center;
+}
+section.s-altura_regulavel .container .content-altura_regulavel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
+}
+section.s-altura_regulavel .container .content-altura_regulavel img{
+    max-width: max-content;
+    max-height: 364px;
+    object-fit: contain;
+    object-position: center;
+    justify-self: flex-end;
+}
+section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items .altura_regulavel_item{
+    display: flex;
+    gap: 1rem;
+}
+section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items .altura_regulavel_item img{
+    max-width: 6.4rem;
+}
+
+section.s-travesseiro-tec .container{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+section.s-travesseiro-tec .container img{
+    max-width: max-content;
+    max-height: 369px;
+    object-fit: contain;
+}
+section.s-travesseiro-tec .container ul li{
+    margin-top: 2.4rem;
+}
