@@ -1,0 +1,82 @@
+.cov,
+.covall,
+#loadingVideo,
+#cfs {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0
+}
+
+#loadingVideo {
+   background:none;    
+}
+
+#cfs {
+    background-image: url(CLIQUE---PARA---COMEÇAR);
+    background-size: cover;
+    z-index: 25;
+    display: none;
+    cursor:pointer;
+}
+
+.cov {
+    background-image: url(CLIQUE---PARA---CONTINUAR);
+    background-size: cover;
+    z-index: 20!important;
+    display: none
+}
+
+.covall {
+    z-index: 10!important
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden
+}
+
+.responsive-video iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.embed-container {
+    border: 2px solid #000;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+
+@media only screen and (max-width:480px) {
+#wh-wrapper-1 {
+	margin: 0;
+}
+.responsive-video {
+	padding-bottom: 150%;
+}
+#cfs {
+	background-image: url(VERTICAL---CELULAR);
+	background-size: cover;
+}
+.cov {
+	background-image: url(APERTE---PARA---CONTINUAR---CELULAR) !important;
+}

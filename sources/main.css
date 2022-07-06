@@ -273,6 +273,35 @@ section.s-google .container .google-title h2{
 section.s-google .container .google-title p{
     text-align: center;
 }
+section.s-google .container .content-google .avaliacao{
+    margin-top: 2.4rem;
+}
+section.s-google .container .content-google .avaliacao span{
+    display: flex;
+    font-size: var(--subtitle-h4);
+    font-weight: 600;
+}
+section.s-depoimentos .container .depoimentos-title h2,
+section.s-depoimentos .container .depoimentos-title h3{
+    text-align: center;
+    width: 100%;
+    max-width: 96rem;
+    margin: auto;
+    margin-top: 2.4rem;
+}
+section.s-depoimentos .container .content-depoimentos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2.4rem;
+    justify-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+}
+section.s-depoimentos .container .content-depoimentos iframe{
+    display: block;
+    min-height: 220px;
+}
+
 section.s-offer .container .offer-title h2{
     text-align: center;
     font-weight: 400;
@@ -355,4 +384,8 @@ footer nav ul{
 footer nav ul li a{
     color: #fff;
     font-weight: 600;
+}
+
+iframe{
+
 }
