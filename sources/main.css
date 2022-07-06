@@ -33,7 +33,7 @@
     /* .5rem = 8px / 1rem = 16px */
     --body-font: 'system-ui', sans-serif;
     --header: 5.8rem;
-    --title: clamp(3.2rem, 3.8vw, 4.2rem);
+    --title: clamp(2.8rem, 3.8vw, 4.2rem);
     --subtitle: clamp(2rem, 2.4vw, 2.8rem);
     --subtitle-h4: clamp(1.8rem, 2.2vw, 2.4rem);
     --body-text: clamp(1.6rem, 1.8vw, 2rem);
@@ -181,19 +181,17 @@ section.s-pain .container .pain_title h3 b{
 }
 section.s-pain .container .pain-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(120px, auto));
     margin-top: 6.4rem;
-    gap: 4rem;
+    gap: 2.4rem;
     justify-items: center;
 }
 section.s-pain .container .pain-content .pain-item{
     display: grid;
-    max-width: 280px;
-    max-height: 256px;
+    max-width: max-content;
+    object-fit: contain;
 }
 section.s-pain .container .pain-content .pain-item img{
-    max-width: max-content;
-    height: auto;
     object-fit: contain;
     object-position: center;
 }
