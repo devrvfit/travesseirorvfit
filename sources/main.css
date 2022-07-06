@@ -273,21 +273,35 @@ section.s-google .container .google-title h2{
 section.s-google .container .google-title p{
     text-align: center;
 }
-section.s-google .container .content-google .avaliacao{
-    margin-top: 2.4rem;
-}
-section.s-google .container .content-google .avaliacao img{
-    max-width: 32rem;
-    max-height: max-content;
-    object-fit: contain;
-    border-radius: .8rem;
-}
-section.s-google .container .content-google ul{
+section.s-google .container .content_recomend{ 
+    align-content: center;
+    background: transparent;
+    padding: 0; 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 2.4rem;
-    width: 100%;
-    justify-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+section.s-google .container .content_recomend figure {
+overflow: auto;
+scroll-snap-type: x mandatory;
+border-radius: .8rem;
+}
+section.s-google .container .content_recomend img {
+scroll-snap-align: start; 
+border-radius: .6rem;
+margin-bottom: 15px;
+width: max-content;
+object-fit: contain;
+height: 512px;
+margin-right: .8rem;
+}
+section.s-google .container .content_recomend figure {
+align-content: center;
+border:none;
+background-color: transparent;
+display: grid;
+grid: auto / repeat(7, auto);
+grid-gap: 1em;
 }
 
 section.s-depoimentos .container .depoimentos-title h2,
