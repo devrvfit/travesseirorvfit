@@ -109,11 +109,37 @@ strong{
     font-size: inherit;
 }
 details{
-    font-size: var(--details);
+    font-size: var(--subtitle-h4);
+}
+summary{
+    font-size: var(--body-font);
+    font-weight: 500;
 }
 b{
     font-size: inherit;
 }
+.icon-stars {
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--attention-color-yellow);
+}
+.icon-baixo {
+    width: 6.4rem;
+    height: 5rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--brand-color2-light);
+}
+.logo {
+    width: 24.9rem;
+    height: 6rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--brand-color2-light);
+}
+
 section{
     padding-top: 4rem;
     padding-bottom: 6rem;
@@ -196,17 +222,20 @@ section.s-altura_regulavel .container .content-altura_regulavel img{
 section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 }
 section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items .altura_regulavel_item{
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items .altura_regulavel_item p{
+    font-weight: 600;
 }
 section.s-altura_regulavel .container .content-altura_regulavel .altura_regulavel_items .altura_regulavel_item img{
     max-width: 6.4rem;
 }
-
 section.s-travesseiro-tec .container{
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
@@ -217,4 +246,104 @@ section.s-travesseiro-tec .container img{
 }
 section.s-travesseiro-tec .container ul li{
     margin-top: 2.4rem;
+}
+
+section.s-google .container .google-title{
+    margin: auto;
+    width: 100%;
+    max-height: 25.6rem;
+    display: flex;
+    flex-direction: column;
+    grid-auto-rows: max-content;
+    justify-content: center;
+}
+section.s-google .container .google-title h2{
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+section.s-google .container .google-title p{
+    text-align: center;
+}
+section.s-offer .container .offer-title h2{
+    text-align: center;
+    font-weight: 400;
+}
+section.s-offer .container .offer-title h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--title);
+    margin-top: 2.4rem;
+}
+section.s-offer .container .offer-title h3 b{
+    color: var(--brand-color2);
+}
+section.s-offer .container .content-offer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items:center;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+}
+section.s-offer .container .content-offer li img{
+    max-width: 28rem;
+    max-height: max-content;
+    object-fit: contain;
+}
+section.s-offer{
+    background-color: var(--gray-color);
+}
+section.s-offer .container .selos{
+    max-width: max-content;
+    max-height: 3.7rem;
+    object-fit: contain;
+    justify-self: center;
+    margin-top: 2.4rem;
+}
+section.s-faq .container h2{
+    text-align: center;
+}
+section.s-faq .container .content-faq{
+    width: 100%;
+    max-width: 96rem;
+    justify-self: center;
+}
+section.s-faq .container .content-faq details{
+    margin-top: 2.4rem;
+    width: 100%;
+}
+section.s-faq .container .content-faq details p{
+    padding: 0 2rem
+}
+section.s-faq .container .content-faq summary{
+    display: block;
+    margin-top: 2.4rem;
+    padding: 1.6rem 2rem;
+    border-radius: .8rem;
+    background-color: var(--gray-color);
+    cursor: pointer;
+
+}
+
+footer{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    background-color: var(--brand-color2);
+}
+footer .logo{
+    margin: auto;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+}
+footer nav ul{
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+footer nav ul li a{
+    color: #fff;
+    font-weight: 600;
 }
