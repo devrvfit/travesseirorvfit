@@ -151,8 +151,11 @@ section{
     gap: 2.4rem;
 }
 
-section.banner-hero{
-    border-bottom: .5rem solid var(--brand-color2);
+section.banner-hero img{
+    max-width: max-content;
+    object-fit: contain;
+    max-height: 100vh;
+    object-position: center;
 }
 
 section.s-chamada .container h2{
@@ -178,7 +181,7 @@ section.s-pain .container .pain_title h3 b{
 }
 section.s-pain .container .pain-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
     margin-top: 6.4rem;
     gap: 4rem;
     justify-items: center;
@@ -201,7 +204,13 @@ section.s-chega .container .chega-title h3 {
     margin-top: 2.4rem;
 }
 section.s-chega .container picture {
+    margin: auto;
     margin-top: 4rem;
+}
+section.s-chega .container img{
+    object-fit: contain;
+    object-position: center;
+    max-width: max-content;
 }
 section.s-altura_regulavel .container .altura_regulavel-title h2,
 section.s-altura_regulavel .container .altura_regulavel-title h3{
