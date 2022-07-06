@@ -276,11 +276,20 @@ section.s-google .container .google-title p{
 section.s-google .container .content-google .avaliacao{
     margin-top: 2.4rem;
 }
-section.s-google .container .content-google .avaliacao span{
-    display: flex;
-    font-size: var(--subtitle-h4);
-    font-weight: 600;
+section.s-google .container .content-google .avaliacao img{
+    max-width: 32rem;
+    max-height: max-content;
+    object-fit: contain;
+    border-radius: .8rem;
 }
+section.s-google .container .content-google ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2.4rem;
+    width: 100%;
+    justify-items: center;
+}
+
 section.s-depoimentos .container .depoimentos-title h2,
 section.s-depoimentos .container .depoimentos-title h3{
     text-align: center;
