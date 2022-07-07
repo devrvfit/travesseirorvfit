@@ -336,15 +336,16 @@ section.s-depoimentos .container .depoimentos-title h3{
 }
 section.s-depoimentos .container .content-depoimentos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(33vh, 1fr));
     gap: 2.4rem;
-    justify-content: center;
-    justify-items: stretch;
+    justify-items: center;
     align-items: stretch;
 }
 section.s-depoimentos .container .content-depoimentos iframe{
-    display: block;
-    min-height: 220px;
+    max-width: fit-content;
+    max-height: 19vh;
+    object-fit: contain;
+    border-radius: .8rem;
 }
 
 section.s-offer .container .offer-title h2{
@@ -494,4 +495,29 @@ footer .whatsapp img{
 .s-404 .container h3{
     text-align: center;
     
+}
+
+/* Página de erro 404 */
+section.s-404 .container{
+    place-items: center;
+}
+/* página de aprovação */
+section.s-aprovacao .container{
+    place-items: center;
+}
+/*página de boleto */
+section.s-boleto .container{
+    place-items: center;
+}
+/*página de obrigado */
+section.s-obrigado .container{
+    place-items: center;
+}
+/*página de pix */
+section.s-pix .container{
+    place-items: center;
+}
+/*página de politica */
+section.s-btn .container{
+    place-items: center;
 }
